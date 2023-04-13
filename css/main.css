@@ -1,0 +1,135 @@
+.home {
+    height: 100%;
+    padding-inline: 10rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.devices {
+    max-width: 70rem; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.2rem;
+}
+
+.devices h1 {
+    font-size: 4.8rem;
+    font-weight: 300;
+    line-height: 5.6rem;
+    text-align: center;
+    color: #000000;
+}
+
+.cor_diferente{
+    font-weight: 700;
+}
+
+.devices h1 span {
+    color: var(--primary-color);
+}
+
+.devices img {
+    width: 100%;
+    height: 100%;
+
+    max-height: 28rem;
+    max-width: 46.2rem;
+
+    object-fit: contain;
+}
+
+.side-image {
+    width: 100%;
+
+    max-width: 49.4rem;
+    max-height: 49.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-image img {
+    width: 50%;
+    height: 50%;
+
+    object-fit: contain;
+}
+
+.courses {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.buttonCurso {
+    width: 400px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+
+    border: none;
+    border: 1px solid #000000;
+    box-shadow: 12px 12px 4px rgba(51, 71, 176, 0.5);
+    background-color: var(--primary-color);
+}
+
+.buttonCurso:hover {
+    border: 2px solid #fff;
+}
+
+.buttonCurso img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_aluno {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+.card_aluno img {
+    width: 200px;
+    height: 200px;
+}
+
+.card_aluno:hover {
+    background-color: #797db8;
+}
+
+.alunos {
+    display: block;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
