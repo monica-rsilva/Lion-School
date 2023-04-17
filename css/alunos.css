@@ -1,98 +1,174 @@
-.turma{
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.turma {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.title_curso{
-  display: flex;
-  padding-top: 10px;
-
-  font-size: 4rem;
-  font-weight: bold;
-
-  color: var(--primary-color);
+.title_curso {
+    display: flex;
+    padding-top: 10px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 .alunos {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
 .card_aluno {
-  width: 200px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.cardAluno_finalizado{
-  background-color: var(--second-color);
+.cardAluno_finalizado {
+    background-color: var(--second-color);
 }
 
-.cardAluno_cursando{
-  background-color: var(--primary-color);
+.cardAluno_cursando {
+    background-color: var(--primary-color);
 }
 
 .card_aluno img {
-  width: 200px;
-  height: 200px;
+    width: 200px;
+    height: 200px;
 }
 
 .card_aluno:hover {
-  background-color: #797db8;
+    background-color: #797db8;
 }
 
 .status {
-  width: 100%;
-  height: 50px;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 22%;
-
-  background: #BCC2E5;
-  color: var(--primary-color);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 22%;
+    background: #BCC2E5;
+    color: var(--primary-color);
 }
 
 #main {
-  flex-direction: column;
+    flex-direction: column;
 }
 
-.cursando{
-  width: 20px;
-  height: 20px;
-  background-color: var(--primary-color);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+.cursando {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
-.finalizado{
-  width: 20px;
-  height: 20px;
-  background-color: var(--second-color);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-}
-.legenda{
-  display: flex;
-  gap: 20px; 
-  
-  font-weight: 500;
-  font-size: 16px;
+.finalizado {
+    width: 20px;
+    height: 20px;
+    background-color: var(--second-color);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
-.legenda li{
-  display: flex;
-  gap: 5px;
+.legenda {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
 
-  font-weight: 500;
-  font-size: 16px;
+.legenda li {
+    display: flex;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media(max-width:640px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 75px;
+    }
+    main {
+        height: 90%;
+    }
+    .turma {
+        width: 100%;
+        height: 95%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .status {
+        display: flex;
+        height: 60px;
+    }
+    .cursando {
+        width: 10px;
+        height: 10px;
+    }
+    .finalizado {
+        width: 10px;
+        height: 10px;
+    }
+    .legenda {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .title_curso {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        height: 100px;
+    }
+    .social-container {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    #social {
+        display: none;
+    }
+    .alunos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        flex-wrap: nowrap;
+        height: 70%;
+        overflow-y: scroll;
+    }
+    #aluno_profile>img {
+        width: 200PX;
+        height: fit-content;
+    }
+    #aluno_profile>span {
+        font-size: 1.3rem;
+    }
+    .myChart {
+        display: flex;
+        width: 90px;
+        height: 100px;
+    }
+    /* .chart_area {
+        display: flex;
+        width: 20%;
+    } */
 }
