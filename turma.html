@@ -23,8 +23,8 @@
       <span>Lion School</span>
     </div>
 
-    <button type="button" href="./home.html">
-      <a href="./home.html">
+    <button type="button">
+      <a href="./index.html">
         <i class="fa-solid fa-share-from-square"></i>
         <span>Voltar</span>
       </a>
@@ -32,7 +32,34 @@
   </nav>
 
   <main id="main">
-    <div class="alunos" id="alunos"></div>
+    <div class="status">
+      <ul class="menu">
+        <li id="filter_status">Status</li>
+        <li id="filter_studying">Cursando</li>
+        <li id="filter_finished">Finalizado</li>
+      </ul>
+
+      <ul class="legenda">
+        <li>LEGENDA</li>
+        <li>
+          <div class="cursando"></div>
+          Cursando
+        </li>
+        <li>
+          <div class="finalizado"></div>
+          Finalizado
+        </li>
+      </ul>
+    </div>
+
+    <div class="turma" id="turma">
+      <h1 class="title_curso" id="title_curso"></h1>
+
+      <div class="alunos" id="alunos">
+      </div>
+
+    </div>
+
   </main>
 
   <footer>

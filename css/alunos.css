@@ -1,34 +1,98 @@
-.alunos{
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
-  
-  .card_aluno{
-    width: 200px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--primary-color);
-  }
-  
-  .card_aluno img{
-    width: 200px;
-    height: 200px;
-  }
-  
-  .card_aluno:hover{
-    background-color: #797db8;
-  }
+.turma{
+  height: 100%;
 
-  .status{
-    height: 50px;
-    background:#BCC2E5;
-    width: 100%;
-    z-index: 21;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_curso{
+  display: flex;
+  padding-top: 10px;
+
+  font-size: 4rem;
+  font-weight: bold;
+
+  color: var(--primary-color);
+}
+
+.alunos {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card_aluno {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardAluno_finalizado{
+  background-color: var(--second-color);
+}
+
+.cardAluno_cursando{
+  background-color: var(--primary-color);
+}
+
+.card_aluno img {
+  width: 200px;
+  height: 200px;
+}
+
+.card_aluno:hover {
+  background-color: #797db8;
+}
+
+.status {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 22%;
+
+  background: #BCC2E5;
+  color: var(--primary-color);
+}
+
+#main {
+  flex-direction: column;
+}
+
+.cursando{
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+.finalizado{
+  width: 20px;
+  height: 20px;
+  background-color: var(--second-color);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+.legenda{
+  display: flex;
+  gap: 20px; 
+  
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.legenda li{
+  display: flex;
+  gap: 5px;
+
+  font-weight: 500;
+  font-size: 16px;
+}
